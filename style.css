@@ -1,0 +1,149 @@
+
+.wrapper{
+  width: 550px;
+  height: 450px;
+  margin: 0 auto;
+  padding-top: 100px;
+  font-family: sans-serif;
+}
+
+
+.container {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 100px;
+  padding-top: 5px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: sans-serif;
+  
+}
+
+
+p{
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+input:disabled ~ .box-1{
+  opacity: 0.5;
+}
+
+
+input:disabled ~ .container{
+  opacity: 0.5;
+}
+
+input:disabled ~ .text-1{
+  color: #ccc;
+}
+
+
+input{
+  display: none;
+}
+
+.container input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.box-1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width:  40px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+
+.box-2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+
+.box-3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+input:disabled ~ .box-3{
+  opacity: 0.5;
+}
+
+input:disabled ~ .text-3{
+  color: #ccc;
+}
+
+.box-4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+input:disabled ~ .box-4{
+  opacity: 0.5;
+}
+
+input:disabled ~ .text-4{
+  color: #ABABAB;
+}
+
+.container input:checked ~ .box-1{
+  background-image: url('./img/table-tennis.png');
+  background-position: center center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-color: #ffffff; 
+}
+
+.container input:checked ~ .box-2{
+  background-image: url('./img/basketball-ball.png');
+  background-position: center center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-color: #ffffff; 
+}
+
+.container input:checked ~ .box-3{
+  background-image: url('./img/volleyball-ball.png');
+  background-position: center center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-color: #ffffff; 
+}
+
+.container input:checked ~ .box-4{
+  background-image: url('./img/hockey-puck.png');
+  background-position: center center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
